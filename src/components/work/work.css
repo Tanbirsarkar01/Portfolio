@@ -1,0 +1,118 @@
+.works{
+    /* display: flex;
+    margin: auto; */
+    /* top: 1px; */
+    margin: -3rem;
+}
+.proj_sec{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    /* gap: 4rem; */
+}
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    /* width: 70%; */
+}
+
+.grid_image1{
+    background: url(..//..//assets/rock.png);
+    width: 190px;
+    height: 150px;
+    /* text-align: center; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.grid_image2{
+    background: url(..//..//assets/visualiser.png);
+    width: 190px;
+    height: 150px;
+    /* text-align: center; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.grid_image3{
+    background: url(..//..//assets/notes.jpg);
+    width: 190px;
+    height: 150px;
+    /* text-align: center; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.grid_main{
+    border: 1px solid gray;
+    /* margin: auto; */
+    padding: 2rem;
+    height: 30rem;
+    width: 17rem;
+    border-radius: 20px;
+    background-color: rgb(240, 225, 224) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* box-shadow: 1px 1px 1px 1px black */
+    transition:all 0.3s linear 0s;
+}
+.grid_main:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px black;
+
+}
+.proj_des{
+    font-size: 15px;
+    text-align: center;
+}
+
+.grid_subtitle{
+    font-size: 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.grid_link{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: space-between;
+}
+.proj_btn{
+    background-color: rgb(235, 163, 69);
+    border-radius:3px;
+    padding: 2px 4px;
+}
+.proj_btn:hover{
+    background-color: rgb(226, 129, 2);
+}
+@media screen and (max-width : 950px){
+    .grid_main{
+        height: 28rem;
+        width: 14rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .grid_main{
+        height: 30rem;
+        width: 16rem;
+    }
+    .container_grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+        /* width: 70%; */
+    }
+}
+@media screen and (max-width : 580px){
+    .container_grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* gap:2rem; */
+        /* width: 70%; */
+    }
+}
